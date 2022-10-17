@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SahlViewController" customModule="Aqar_First" customModuleProvider="target">
+            <connections>
+                <outlet property="radioNo" destination="jZf-Bl-qdK" id="swl-HL-KSE"/>
+                <outlet property="radioYes" destination="iv4-JU-76e" id="Kdp-hE-dlx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="تنزيل" translatesAutoresizingMaskIntoConstraints="NO" id="n94-tj-u6z">
+                    <rect key="frame" x="53.666666666666657" y="65" width="283" height="96"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="283" id="71Q-Bp-dQr"/>
+                        <constraint firstAttribute="height" constant="96" id="Iza-n1-Xeb"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="Q7y-EN-8zj">
+                    <rect key="frame" x="46" y="180" width="298" height="225"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="04w-J1-qZ7">
+                            <rect key="frame" x="0.0" y="0.0" width="298" height="48"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sk0-ZE-K17">
+                                    <rect key="frame" x="0.0" y="0.0" width="226.33333333333334" height="48"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="صافي الراتب" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Xh-ec-WfO">
+                                    <rect key="frame" x="231.33333333333329" y="0.0" width="66.666666666666657" height="48"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="imI-GF-9Kj"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Uor-Je-TX8">
+                            <rect key="frame" x="0.0" y="59" width="298" height="48"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="agN-QI-otT">
+                                    <rect key="frame" x="0.0" y="0.0" width="198.66666666666666" height="48"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" الالتزامات المالية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1B1-AI-hiW">
+                                    <rect key="frame" x="203.66666666666666" y="0.0" width="94.333333333333343" height="48"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="6Jm-vr-Mag"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="84q-BY-pRl">
+                            <rect key="frame" x="0.0" y="118" width="298" height="48"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PIH-TT-84c">
+                                    <rect key="frame" x="0.0" y="0.0" width="210.33333333333334" height="48"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="العمر بالسنوات" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0A4-nh-sYD">
+                                    <rect key="frame" x="215.33333333333329" y="0.0" width="82.666666666666657" height="48"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="4UP-xi-YC3"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Omr-uX-cyM">
+                            <rect key="frame" x="0.0" y="177" width="298" height="48"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QHG-hc-Bys">
+                                    <rect key="frame" x="0.0" y="0.0" width="239.66666666666666" height="48"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نوع العقار" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhx-BL-Oop">
+                                    <rect key="frame" x="244.66666666666671" y="0.0" width="53.333333333333343" height="48"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="OJj-cH-flL"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هل هذا هو المنزل الأول؟" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nla-v1-yPE">
+                    <rect key="frame" x="218" y="422" width="126" height="15.666666666666686"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iv4-JU-76e">
+                    <rect key="frame" x="285" y="449.66666666666669" width="59" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="FvT-nV-RtE"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="unchecked radio" imagePlacement="trailing" title="نعم">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="radioAction:" destination="-1" eventType="touchUpInside" id="41o-VI-HXl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZf-Bl-qdK">
+                    <rect key="frame" x="298" y="472.66666666666669" width="46" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="jf0-Rd-nuM"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="unchecked radio" imagePlacement="trailing" title="لا">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="radioAction:" destination="-1" eventType="touchUpInside" id="s2N-Xf-ivh"/>
+                    </connections>
+                </button>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="bUe-DC-08G">
+                    <rect key="frame" x="46" y="505.66666666666674" width="298" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="Ewq-MX-nUl"/>
+                    </constraints>
+                    <segments>
+                        <segment title="آخر"/>
+                        <segment title="سعودي"/>
+                    </segments>
+                    <color key="selectedSegmentTintColor" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </segmentedControl>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="4" translatesAutoresizingMaskIntoConstraints="NO" id="jfA-s8-fW0">
+                    <rect key="frame" x="46" y="559.66666666666663" width="298" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="5ct-i2-Wbe"/>
+                    </constraints>
+                    <segments>
+                        <segment title="رجل أعمال"/>
+                        <segment title="متقاعد"/>
+                        <segment title="عسكري"/>
+                        <segment title="قطاع خاص"/>
+                        <segment title="مدني"/>
+                    </segments>
+                    <color key="selectedSegmentTintColor" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </segmentedControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="iv4-JU-76e" firstAttribute="top" secondItem="Nla-v1-yPE" secondAttribute="bottom" constant="12" id="66J-1V-COp"/>
+                <constraint firstItem="jfA-s8-fW0" firstAttribute="leading" secondItem="bUe-DC-08G" secondAttribute="leading" id="C6j-iI-79n"/>
+                <constraint firstItem="Q7y-EN-8zj" firstAttribute="top" secondItem="n94-tj-u6z" secondAttribute="bottom" constant="19" id="CyH-nU-iht"/>
+                <constraint firstItem="jfA-s8-fW0" firstAttribute="trailing" secondItem="bUe-DC-08G" secondAttribute="trailing" id="ET5-pL-tDI"/>
+                <constraint firstItem="Nla-v1-yPE" firstAttribute="trailing" secondItem="Q7y-EN-8zj" secondAttribute="trailing" id="GAs-b2-pNV"/>
+                <constraint firstItem="iv4-JU-76e" firstAttribute="trailing" secondItem="Nla-v1-yPE" secondAttribute="trailing" id="Gdb-g6-tFP"/>
+                <constraint firstItem="bUe-DC-08G" firstAttribute="top" secondItem="Nla-v1-yPE" secondAttribute="bottom" constant="68" id="KFb-98-c3W"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Q7y-EN-8zj" secondAttribute="trailing" constant="46" id="PzN-G1-pPl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bUe-DC-08G" secondAttribute="trailing" constant="46" id="R9y-Fn-Lt6"/>
+                <constraint firstItem="jZf-Bl-qdK" firstAttribute="trailing" secondItem="iv4-JU-76e" secondAttribute="trailing" id="RMi-uK-JOs"/>
+                <constraint firstItem="n94-tj-u6z" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="18" id="Sbk-tY-wMS"/>
+                <constraint firstItem="Nla-v1-yPE" firstAttribute="top" secondItem="Q7y-EN-8zj" secondAttribute="bottom" constant="17" id="g9x-hI-lNe"/>
+                <constraint firstItem="Q7y-EN-8zj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="46" id="io2-rh-wHq"/>
+                <constraint firstItem="bUe-DC-08G" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="46" id="o61-Av-7Cz"/>
+                <constraint firstItem="jfA-s8-fW0" firstAttribute="top" secondItem="bUe-DC-08G" secondAttribute="bottom" constant="15" id="ogC-Ov-DYH"/>
+                <constraint firstItem="n94-tj-u6z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vso-M5-aIG"/>
+                <constraint firstItem="jZf-Bl-qdK" firstAttribute="top" secondItem="iv4-JU-76e" secondAttribute="bottom" constant="5" id="xqU-07-cfN"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="unchecked radio" width="12" height="12"/>
+        <image name="تنزيل" width="283" height="96"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

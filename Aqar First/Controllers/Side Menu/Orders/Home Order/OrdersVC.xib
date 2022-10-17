@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-Medium.ttf">
+            <string>Tajawal-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrdersVC" customModule="Aqar_First" customModuleProvider="target">
+            <connections>
+                <outlet property="continerView" destination="XGe-FX-Q7V" id="UAa-UP-6RZ"/>
+                <outlet property="currentOrdersButton" destination="26Y-4I-UNn" id="liV-ZM-tBl"/>
+                <outlet property="finishOrdersButton" destination="bU8-JI-mHH" id="G8Y-3x-ukR"/>
+                <outlet property="headerView" destination="Z8f-Fv-XYF" id="jr0-1B-9ko"/>
+                <outlet property="pendingOrdersButton" destination="thJ-Nb-8Sm" id="tw3-Hn-gog"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XGe-FX-Q7V">
+                    <rect key="frame" x="0.0" y="222" width="414" height="674"/>
+                    <color key="backgroundColor" systemColor="systemGray2Color"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z8f-Fv-XYF">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8td-IU-Y6r">
+                            <rect key="frame" x="182" y="93" width="50" height="17"/>
+                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yV-Ba-M8L">
+                            <rect key="frame" x="30" y="80" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="eLm-Kt-K9x"/>
+                                <constraint firstAttribute="height" constant="30" id="gUu-LB-xBS"/>
+                            </constraints>
+                            <state key="normal" image="normal-back"/>
+                            <connections>
+                                <action selector="backTapped:" destination="-1" eventType="touchUpInside" id="hx5-C5-G1i"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="0hD-3v-b1Z"/>
+                        <constraint firstAttribute="bottom" secondItem="8td-IU-Y6r" secondAttribute="bottom" constant="30" id="LHt-Rp-A01"/>
+                        <constraint firstItem="3yV-Ba-M8L" firstAttribute="leading" secondItem="Z8f-Fv-XYF" secondAttribute="leading" constant="30" id="MgM-6p-Kyh"/>
+                        <constraint firstAttribute="bottom" secondItem="3yV-Ba-M8L" secondAttribute="bottom" constant="30" id="bnW-aS-0Ks"/>
+                        <constraint firstItem="8td-IU-Y6r" firstAttribute="centerX" secondItem="Z8f-Fv-XYF" secondAttribute="centerX" id="whc-vS-2xm"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="36Y-Wd-WNL">
+                    <rect key="frame" x="34.5" y="160" width="345" height="42"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26Y-4I-UNn">
+                            <rect key="frame" x="0.0" y="0.0" width="105" height="42"/>
+                            <color key="backgroundColor" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="8d0-cV-QrD"/>
+                                <constraint firstAttribute="width" constant="105" id="BZm-jC-6uk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="14"/>
+                            <state key="normal" title="Current Orders">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="currentOrdersDidPressed:" destination="-1" eventType="touchUpInside" id="oE7-s9-YYK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thJ-Nb-8Sm">
+                            <rect key="frame" x="120" y="0.0" width="105" height="42"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="105" id="N5F-gz-ILV"/>
+                                <constraint firstAttribute="height" constant="42" id="sx0-YN-7sr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="14"/>
+                            <state key="normal" title="Pending Orders">
+                                <color key="titleColor" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="pendingOrdersDidPressed:" destination="-1" eventType="touchUpInside" id="Ptm-C3-ZZE"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bU8-JI-mHH">
+                            <rect key="frame" x="240" y="0.0" width="105" height="42"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="105" id="Dnq-fW-hgJ"/>
+                                <constraint firstAttribute="height" constant="42" id="L0U-kY-iqH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="14"/>
+                            <state key="normal" title="Finish Orders">
+                                <color key="titleColor" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="finishOrdersDidPressed:" destination="-1" eventType="touchUpInside" id="89A-xl-YT9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Z8f-Fv-XYF" secondAttribute="trailing" id="Ezd-bN-Hqy"/>
+                <constraint firstItem="XGe-FX-Q7V" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Jvo-Uz-ZAg"/>
+                <constraint firstItem="Z8f-Fv-XYF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="L1E-T2-ils"/>
+                <constraint firstAttribute="bottom" secondItem="XGe-FX-Q7V" secondAttribute="bottom" id="RBz-2C-Bek"/>
+                <constraint firstItem="XGe-FX-Q7V" firstAttribute="top" secondItem="36Y-Wd-WNL" secondAttribute="bottom" constant="20" id="Yh2-5J-5uE"/>
+                <constraint firstItem="Z8f-Fv-XYF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eqS-FV-0Qf"/>
+                <constraint firstItem="36Y-Wd-WNL" firstAttribute="top" secondItem="Z8f-Fv-XYF" secondAttribute="bottom" constant="20" id="kwL-SJ-Yfc"/>
+                <constraint firstItem="XGe-FX-Q7V" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="mz9-WT-kyH"/>
+                <constraint firstItem="36Y-Wd-WNL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="npZ-yY-iNh"/>
+            </constraints>
+            <point key="canvasLocation" x="-23.188405797101453" y="55.580357142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="normal-back" width="20" height="20"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

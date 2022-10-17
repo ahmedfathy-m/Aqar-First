@@ -1,0 +1,1418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-Medium.ttf">
+            <string>Tajawal-Medium</string>
+        </array>
+        <array key="Tajawal-Regular.ttf">
+            <string>Tajawal-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddFloorVC" customModule="Aqar_First" customModuleProvider="target">
+            <connections>
+                <outlet property="addFlatRadioBtn" destination="Tpu-Fm-RFr" id="zrW-PP-3c4"/>
+                <outlet property="addFlatStackView" destination="IYN-nu-qes" id="iXK-68-8EY"/>
+                <outlet property="addFlatView" destination="5Zf-wM-wbl" id="yqA-Ru-vHF"/>
+                <outlet property="addMainPhotoView" destination="BGP-9j-rFJ" id="LHa-cz-ojb"/>
+                <outlet property="addMorePhotoView" destination="QQ4-yP-XNm" id="SFJ-py-n0Q"/>
+                <outlet property="addShopRadioBtn" destination="8R1-GQ-MQg" id="39h-mN-Qvg"/>
+                <outlet property="addShopStackView" destination="rJj-5v-eov" id="ddv-4X-IC2"/>
+                <outlet property="addShopView" destination="HM5-Hv-TSP" id="DP1-F9-F9R"/>
+                <outlet property="headerView" destination="YIH-0M-vrg" id="VEh-Ry-V7D"/>
+                <outlet property="otherNotesTextView" destination="SX7-2f-1OG" id="uDg-Id-tzy"/>
+                <outlet property="rentalTermStackViewTopCostratintWithFlatView" destination="4sG-Jb-Eh4" id="F0M-hO-OPa"/>
+                <outlet property="rentalTermStackViewTopCostratintWithShopView" destination="IpZ-jh-Ph0" id="hlQ-qk-uEY"/>
+                <outlet property="view" destination="iN0-l3-epB" id="sBy-yh-TEl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="1213"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YIH-0M-vrg">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Floor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHD-BG-c7P">
+                            <rect key="frame" x="169.5" y="70" width="75" height="20"/>
+                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBu-ad-o2V">
+                            <rect key="frame" x="8" y="69" width="40" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="EHD-DR-seN"/>
+                                <constraint firstAttribute="width" constant="40" id="s12-dR-9yv"/>
+                            </constraints>
+                            <state key="normal" image="left-arrow"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.3537332118" green="0.64383620019999999" blue="0.67093068359999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="iBu-ad-o2V" firstAttribute="centerY" secondItem="iHD-BG-c7P" secondAttribute="centerY" id="48D-id-acD"/>
+                        <constraint firstAttribute="bottom" secondItem="iHD-BG-c7P" secondAttribute="bottom" constant="20" symbolic="YES" id="FqR-ao-I9A"/>
+                        <constraint firstItem="iBu-ad-o2V" firstAttribute="leading" secondItem="YIH-0M-vrg" secondAttribute="leading" constant="8" id="LbA-n4-oMG"/>
+                        <constraint firstAttribute="height" constant="110" id="gwv-0X-4KX"/>
+                        <constraint firstItem="iHD-BG-c7P" firstAttribute="centerX" secondItem="YIH-0M-vrg" secondAttribute="centerX" id="rmH-jg-yd4"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Xu-LW-c84">
+                    <rect key="frame" x="0.0" y="110" width="414" height="1103"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQd-Fu-hZD" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1031"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Floor number or name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u08-ig-RpU" customClass="PasswordPaddingTextField" customModule="Aqar_First" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="10" width="374" height="48"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="tintColor" name="AccentColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="Owj-1H-1GU"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                            <real key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PYb-II-mZl">
+                                    <rect key="frame" x="20" y="78" width="108.5" height="23"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group" translatesAutoresizingMaskIntoConstraints="NO" id="AT8-YG-l7U">
+                                            <rect key="frame" x="0.0" y="0.0" width="23" height="23"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Units" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRC-CE-3mI">
+                                            <rect key="frame" x="33" y="0.0" width="75.5" height="23"/>
+                                            <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3Hy-ZG-ZBl">
+                                    <rect key="frame" x="30" y="116" width="100" height="50"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IYN-nu-qes">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="20"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tpu-Fm-RFr" customClass="Checkbox" customModule="Aqar_First" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="BmU-iI-Mq5"/>
+                                                        <constraint firstAttribute="width" constant="20" id="lmj-pP-IWP"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderStyleIB">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="checkmarkStyleIB">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="checkmarkColor">
+                                                            <color key="value" red="0.30196078431372547" green="0.58431372549019611" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="checkedBorderColor">
+                                                            <color key="value" red="0.67450980392156867" green="0.71764705882352942" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="uncheckedBorderColor">
+                                                            <color key="value" red="0.67450980392156867" green="0.71764705882352942" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="add flat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="va7-dQ-Vl5">
+                                                    <rect key="frame" x="28" y="0.0" width="72" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rJj-5v-eov">
+                                            <rect key="frame" x="0.0" y="30" width="100" height="20"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8R1-GQ-MQg" customClass="Checkbox" customModule="Aqar_First" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="Bko-Ns-1SP"/>
+                                                        <constraint firstAttribute="height" constant="20" id="qO4-Tc-X8W"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderStyleIB">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="checkmarkStyleIB">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="uncheckedBorderColor">
+                                                            <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="checkedBorderColor">
+                                                            <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="checkmarkColor">
+                                                            <color key="value" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="add shop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJU-hi-exJ">
+                                                    <rect key="frame" x="28" y="0.0" width="72" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Zf-wM-wbl">
+                                    <rect key="frame" x="0.0" y="176" width="414" height="388.5"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uB5-zs-jvb">
+                                            <rect key="frame" x="15" y="10" width="384" height="222"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0O2-Cs-K1o">
+                                                    <rect key="frame" x="0.0" y="0.0" width="384" height="48"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="flat number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7IM-ay-3bl" customClass="PasswordPaddingTextField" customModule="Aqar_First" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="182" height="48"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                                    <real key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                                    <real key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="flat space" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H7Y-3J-wYU" customClass="PasswordPaddingTextField" customModule="Aqar_First" customModuleProvider="target">
+                                                            <rect key="frame" x="202" y="0.0" width="182" height="48"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                                    <real key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                                    <real key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </textField>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="hXp-6f-x5L"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lX7-kf-9xQ">
+                                                    <rect key="frame" x="0.0" y="58" width="384" height="48"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPO-B1-UAJ" customClass="SwiftyMenu" customModule="SwiftyMenu">
+                                                            <rect key="frame" x="0.0" y="0.0" width="182" height="48"/>
+                                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value="number of rooms"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfI-g3-HZt" customClass="SwiftyMenu" customModule="SwiftyMenu">
+                                                            <rect key="frame" x="202" y="0.0" width="182" height="48"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value="number of halls"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="8mC-Kh-qaw"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Yrx-3y-osT">
+                                                    <rect key="frame" x="0.0" y="116" width="384" height="48"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7E-8E-ayk" customClass="SwiftyMenu" customModule="SwiftyMenu">
+                                                            <rect key="frame" x="0.0" y="0.0" width="182" height="48"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value="number of kitchens"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hX-Ow-Jeu" customClass="SwiftyMenu" customModule="SwiftyMenu">
+                                                            <rect key="frame" x="202" y="0.0" width="182" height="48"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value="number of stores"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="TaO-5n-Npw"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="exx-Ir-Km5">
+                                                    <rect key="frame" x="0.0" y="174" width="384" height="48"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VeH-lY-Eiq" customClass="SwiftyMenu" customModule="SwiftyMenu">
+                                                            <rect key="frame" x="0.0" y="0.0" width="182" height="48"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value="number of bathrooms"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Electricity meter number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ta-rw-qsh" customClass="PasswordPaddingTextField" customModule="Aqar_First" customModuleProvider="target">
+                                                            <rect key="frame" x="202" y="0.0" width="182" height="48"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                                    <real key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                                    <real key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </textField>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="guS-Q8-15K"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nature of the electricity service" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65I-F8-cbD">
+                                            <rect key="frame" x="15" y="254" width="177.5" height="15.5"/>
+                                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="DNA-GM-9pp">
+                                            <rect key="frame" x="238.5" y="252" width="145.5" height="20"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="veO-4o-T2N">
+                                                    <rect key="frame" x="0.0" y="0.0" width="86.5" height="20"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QuT-MI-rdf" customClass="Checkbox" customModule="Aqar_First" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="3dM-ux-ycI"/>
+                                                                <constraint firstAttribute="width" constant="20" id="PuV-eI-TYp"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="uncheckedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkmarkColor">
+                                                                    <color key="value" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="checkmarkStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscriber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsa-ME-NcI">
+                                                            <rect key="frame" x="28" y="0.0" width="58.5" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sHZ-Xr-9cm">
+                                                    <rect key="frame" x="93.5" y="0.0" width="52" height="20"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7lV-Bb-mUX" customClass="Checkbox" customModule="Aqar_First" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="2WG-3P-Bfk"/>
+                                                                <constraint firstAttribute="height" constant="20" id="jbu-KC-mNO"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="uncheckedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkmarkColor">
+                                                                    <color key="value" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="checkmarkStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Free" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSa-wL-yDK">
+                                                            <rect key="frame" x="28" y="0.0" width="24" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="KIJ-fR-xnB">
+                                            <rect key="frame" x="238.5" y="287" width="137.5" height="20"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Xaf-pM-CpT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="86.5" height="20"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aaS-OP-FPV" customClass="Checkbox" customModule="Aqar_First" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="Jq3-BN-Bhb"/>
+                                                                <constraint firstAttribute="height" constant="20" id="MC8-WF-Vvh"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="uncheckedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkmarkColor">
+                                                                    <color key="value" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="checkmarkStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMi-lh-B2r">
+                                                            <rect key="frame" x="28" y="0.0" width="58.5" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="G6E-HM-LM5">
+                                                    <rect key="frame" x="93.5" y="0.0" width="44" height="20"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QcU-sn-hxu" customClass="Checkbox" customModule="Aqar_First" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="FAo-6a-S3e"/>
+                                                                <constraint firstAttribute="height" constant="20" id="xiR-gG-maC"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="uncheckedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkmarkColor">
+                                                                    <color key="value" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="checkmarkStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKS-0A-Nhv">
+                                                            <rect key="frame" x="28" y="0.0" width="16" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="CyP-Lr-vm6">
+                                            <rect key="frame" x="238.5" y="326" width="137.5" height="20"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2Yd-m7-OtE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="86.5" height="20"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eKe-Zi-8ve" customClass="Checkbox" customModule="Aqar_First" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="91g-VX-CQw"/>
+                                                                <constraint firstAttribute="height" constant="20" id="iue-VV-SSb"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="checkmarkStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="uncheckedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkmarkColor">
+                                                                    <color key="value" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZb-5i-cYl">
+                                                            <rect key="frame" x="28" y="0.0" width="58.5" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wp8-Qh-iPQ">
+                                                    <rect key="frame" x="93.5" y="0.0" width="44" height="20"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VWa-Kn-91N" customClass="Checkbox" customModule="Aqar_First" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="Hl7-rB-MVz"/>
+                                                                <constraint firstAttribute="height" constant="20" id="ePv-ho-93s"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="checkmarkStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="uncheckedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkmarkColor">
+                                                                    <color key="value" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioz-C9-wfZ">
+                                                            <rect key="frame" x="28" y="0.0" width="16" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="mKE-T9-rmO">
+                                            <rect key="frame" x="238.5" y="361" width="137.5" height="20"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="S8y-Ra-0uN">
+                                                    <rect key="frame" x="0.0" y="0.0" width="86.5" height="20"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yKw-2Y-Its" customClass="Checkbox" customModule="Aqar_First" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="2SK-Tx-Hwo"/>
+                                                                <constraint firstAttribute="width" constant="20" id="5ky-4C-WJb"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="uncheckedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkmarkColor">
+                                                                    <color key="value" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="checkmarkStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZq-vR-GJi">
+                                                            <rect key="frame" x="28" y="0.0" width="58.5" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ohK-8O-iVj">
+                                                    <rect key="frame" x="93.5" y="0.0" width="44" height="20"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gb3-R9-CJe" customClass="Checkbox" customModule="Aqar_First" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="6zC-q9-XvX"/>
+                                                                <constraint firstAttribute="width" constant="20" id="bMY-sO-XSe"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="checkmarkStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="uncheckedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkmarkColor">
+                                                                    <color key="value" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z31-1C-VK3">
+                                                            <rect key="frame" x="28" y="0.0" width="16" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is there a ready kitchen?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqI-9Q-pQW">
+                                            <rect key="frame" x="15" y="288.5" width="164.5" height="17.5"/>
+                                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is there a balcony?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5y-05-XwO">
+                                            <rect key="frame" x="15" y="328" width="110.5" height="15.5"/>
+                                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are there air conditioners installed?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiG-KF-GSW">
+                                            <rect key="frame" x="15" y="363" width="205" height="15.5"/>
+                                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="388.5" id="4qo-nC-znk"/>
+                                        <constraint firstItem="fqI-9Q-pQW" firstAttribute="leading" secondItem="65I-F8-cbD" secondAttribute="leading" id="8iL-om-ecy"/>
+                                        <constraint firstItem="CyP-Lr-vm6" firstAttribute="top" secondItem="KIJ-fR-xnB" secondAttribute="bottom" constant="19" id="9Lv-EG-q5c"/>
+                                        <constraint firstItem="KIJ-fR-xnB" firstAttribute="top" secondItem="DNA-GM-9pp" secondAttribute="bottom" constant="15" id="9Pl-9L-YaS"/>
+                                        <constraint firstItem="ohK-8O-iVj" firstAttribute="leading" secondItem="wp8-Qh-iPQ" secondAttribute="leading" id="ANk-5E-XI3"/>
+                                        <constraint firstItem="CyP-Lr-vm6" firstAttribute="leading" secondItem="KIJ-fR-xnB" secondAttribute="leading" id="GD3-vn-Mc6"/>
+                                        <constraint firstItem="65I-F8-cbD" firstAttribute="leading" secondItem="uB5-zs-jvb" secondAttribute="leading" id="GUJ-2n-lkZ"/>
+                                        <constraint firstItem="uB5-zs-jvb" firstAttribute="top" secondItem="5Zf-wM-wbl" secondAttribute="top" constant="10" id="I2O-g6-MmO"/>
+                                        <constraint firstItem="k5y-05-XwO" firstAttribute="leading" secondItem="fqI-9Q-pQW" secondAttribute="leading" id="JAB-ri-bu4"/>
+                                        <constraint firstItem="65I-F8-cbD" firstAttribute="top" secondItem="uB5-zs-jvb" secondAttribute="bottom" constant="22" id="LqU-Gv-1bj"/>
+                                        <constraint firstAttribute="trailing" secondItem="DNA-GM-9pp" secondAttribute="trailing" constant="30" id="M93-pk-ytV"/>
+                                        <constraint firstItem="G6E-HM-LM5" firstAttribute="leading" secondItem="sHZ-Xr-9cm" secondAttribute="leading" id="O6F-yr-vrR"/>
+                                        <constraint firstItem="uB5-zs-jvb" firstAttribute="leading" secondItem="5Zf-wM-wbl" secondAttribute="leading" constant="15" id="Prb-xb-pQJ"/>
+                                        <constraint firstItem="fqI-9Q-pQW" firstAttribute="top" secondItem="65I-F8-cbD" secondAttribute="bottom" constant="19" id="VTW-B5-AL2"/>
+                                        <constraint firstItem="k5y-05-XwO" firstAttribute="centerY" secondItem="CyP-Lr-vm6" secondAttribute="centerY" id="b7m-4y-Jb7"/>
+                                        <constraint firstItem="wp8-Qh-iPQ" firstAttribute="leading" secondItem="G6E-HM-LM5" secondAttribute="leading" id="bXT-DQ-or9"/>
+                                        <constraint firstItem="mKE-T9-rmO" firstAttribute="top" secondItem="CyP-Lr-vm6" secondAttribute="bottom" constant="15" id="cmM-3J-J5A"/>
+                                        <constraint firstItem="DNA-GM-9pp" firstAttribute="centerY" secondItem="65I-F8-cbD" secondAttribute="centerY" id="eaj-Bi-adg"/>
+                                        <constraint firstAttribute="trailing" secondItem="uB5-zs-jvb" secondAttribute="trailing" constant="15" id="ifw-vo-v4f"/>
+                                        <constraint firstItem="mKE-T9-rmO" firstAttribute="leading" secondItem="CyP-Lr-vm6" secondAttribute="leading" id="paF-It-yZv"/>
+                                        <constraint firstItem="KIJ-fR-xnB" firstAttribute="leading" secondItem="DNA-GM-9pp" secondAttribute="leading" id="phM-Nz-Idm"/>
+                                        <constraint firstItem="FiG-KF-GSW" firstAttribute="centerY" secondItem="mKE-T9-rmO" secondAttribute="centerY" id="s5T-Ti-SQI"/>
+                                        <constraint firstItem="FiG-KF-GSW" firstAttribute="leading" secondItem="k5y-05-XwO" secondAttribute="leading" id="seb-Bo-KYh"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="yZx-AK-5iK">
+                                    <rect key="frame" x="20" y="574.5" width="374" height="48"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7G-b6-Q0h" customClass="SwiftyMenu" customModule="SwiftyMenu">
+                                            <rect key="frame" x="0.0" y="0.0" width="182.5" height="48"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value="rental term"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ilm-NX-RuR" customClass="PasswordPaddingTextField" customModule="Aqar_First" customModuleProvider="target">
+                                            <rect key="frame" x="191.5" y="0.0" width="182.5" height="48"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="15"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                    <real key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                    <real key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="hqO-Vy-2tO"/>
+                                    </constraints>
+                                </stackView>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SX7-2f-1OG">
+                                    <rect key="frame" x="20" y="642.5" width="374" height="110"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="110" id="bxo-2O-AvU"/>
+                                    </constraints>
+                                    <color key="textColor" systemColor="labelColor"/>
+                                    <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="other notes"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textView>
+                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HM5-Hv-TSP">
+                                    <rect key="frame" x="0.0" y="176" width="414" height="315"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="V9H-iy-LFT">
+                                            <rect key="frame" x="20" y="10" width="374" height="48"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="shop number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WSO-aX-N9h" customClass="PasswordPaddingTextField" customModule="Aqar_First" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="177" height="48"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="12"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="shop space" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O5H-XD-uI2" customClass="PasswordPaddingTextField" customModule="Aqar_First" customModuleProvider="target">
+                                                    <rect key="frame" x="197" y="0.0" width="177" height="48"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="12"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="dez-nz-ai9"/>
+                                            </constraints>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is there electricity?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgE-Aa-bfY">
+                                            <rect key="frame" x="20" y="68" width="126.5" height="40"/>
+                                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is there any water?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJl-y8-Y8K">
+                                            <rect key="frame" x="20" y="152.5" width="127.5" height="17.5"/>
+                                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="kGM-yj-sxm">
+                                            <rect key="frame" x="209" y="78" width="137.5" height="20"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7hO-7D-i39">
+                                                    <rect key="frame" x="0.0" y="0.0" width="86.5" height="20"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Si8-nE-Wvz" customClass="Checkbox" customModule="Aqar_First" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="7we-4I-mdL"/>
+                                                                <constraint firstAttribute="width" constant="20" id="Vju-fY-1MW"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="checkmarkStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="uncheckedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkmarkColor">
+                                                                    <color key="value" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhy-m8-oE5">
+                                                            <rect key="frame" x="28" y="0.0" width="58.5" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FmE-0Q-M5E">
+                                                    <rect key="frame" x="93.5" y="0.0" width="44" height="20"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8X7-6Y-UST" customClass="Checkbox" customModule="Aqar_First" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="8GM-jK-h8O"/>
+                                                                <constraint firstAttribute="width" constant="20" id="lfS-nQ-M4F"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="checkmarkStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="uncheckedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkmarkColor">
+                                                                    <color key="value" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LI3-w2-h54">
+                                                            <rect key="frame" x="28" y="0.0" width="16" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="k5z-sq-I9R">
+                                            <rect key="frame" x="209" y="114" width="145.5" height="20"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HVp-Xu-EhY">
+                                                    <rect key="frame" x="0.0" y="0.0" width="86.5" height="20"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4u-kK-7H2" customClass="Checkbox" customModule="Aqar_First" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="9aT-ay-X2w"/>
+                                                                <constraint firstAttribute="height" constant="20" id="pYO-he-zPf"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="checkmarkStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="uncheckedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkmarkColor">
+                                                                    <color key="value" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscriber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MzR-cr-0eK">
+                                                            <rect key="frame" x="28" y="0.0" width="58.5" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hx5-KP-dgg">
+                                                    <rect key="frame" x="93.5" y="0.0" width="52" height="20"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ca8-Kf-PZV" customClass="Checkbox" customModule="Aqar_First" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="LXl-gf-k0N"/>
+                                                                <constraint firstAttribute="height" constant="20" id="wB7-NC-Zha"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="checkmarkStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="uncheckedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkmarkColor">
+                                                                    <color key="value" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Free" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHZ-DA-c0H">
+                                                            <rect key="frame" x="28" y="0.0" width="24" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="T0W-Sa-ett">
+                                            <rect key="frame" x="209" y="151" width="137.5" height="20"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9mo-IE-VuO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="86.5" height="20"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vg0-mw-wZx" customClass="Checkbox" customModule="Aqar_First" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="eJO-yS-l8i"/>
+                                                                <constraint firstAttribute="height" constant="20" id="oFT-Ba-Vb5"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="checkmarkStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="uncheckedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkmarkColor">
+                                                                    <color key="value" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gI-vy-Gsf">
+                                                            <rect key="frame" x="28" y="0.0" width="58.5" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1Au-tm-MXY">
+                                                    <rect key="frame" x="93.5" y="0.0" width="44" height="20"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enu-gk-Tv2" customClass="Checkbox" customModule="Aqar_First" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="LBl-TI-JCA"/>
+                                                                <constraint firstAttribute="width" constant="20" id="uJB-fB-o5O"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="checkmarkStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="uncheckedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkmarkColor">
+                                                                    <color key="value" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGd-JA-meh">
+                                                            <rect key="frame" x="28" y="0.0" width="16" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="dkG-cU-rTL">
+                                            <rect key="frame" x="20" y="258.5" width="78.5" height="53"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ldr-6l-n7m">
+                                                    <rect key="frame" x="0.0" y="0.0" width="78.5" height="20"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbH-md-sr1" customClass="Checkbox" customModule="Aqar_First" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="mUf-i5-Bul"/>
+                                                                <constraint firstAttribute="height" constant="20" id="r31-Q0-rrg"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="checkmarkStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="uncheckedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkmarkColor">
+                                                                    <color key="value" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purchase" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anl-mM-JgF">
+                                                            <rect key="frame" x="28" y="0.0" width="50.5" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="E0s-Uw-ErQ">
+                                                    <rect key="frame" x="0.0" y="33" width="78.5" height="20"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="63d-D9-USS" customClass="Checkbox" customModule="Aqar_First" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="Bne-Qx-Vlf"/>
+                                                                <constraint firstAttribute="width" constant="20" id="Tge-ZZ-bsx"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="checkmarkStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="uncheckedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkmarkColor">
+                                                                    <color key="value" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meh-4f-bcE">
+                                                            <rect key="frame" x="28" y="0.0" width="50.5" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Property value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4S-TK-ssn">
+                                            <rect key="frame" x="20" y="226" width="97" height="17.5"/>
+                                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3dx-Hd-Ph3" customClass="PasswordPaddingTextField" customModule="Aqar_First" customModuleProvider="target">
+                                            <rect key="frame" x="206.5" y="244.5" width="140" height="48"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="140" id="c0U-wE-gpf"/>
+                                                <constraint firstAttribute="height" constant="48" id="dD3-PJ-zMg"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="15"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                    <real key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                    <real key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is there a bathroom?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkt-ck-lA0">
+                                            <rect key="frame" x="20" y="193.5" width="139" height="17.5"/>
+                                            <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="NmN-Vy-u5P">
+                                            <rect key="frame" x="209" y="192" width="137.5" height="20"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="L1k-Rr-AaT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="79.5" height="20"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a6B-vg-brQ" customClass="Checkbox" customModule="Aqar_First" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="Lgs-YT-dqz"/>
+                                                                <constraint firstAttribute="width" constant="20" id="Rtl-76-cpK"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="checkmarkStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="uncheckedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkmarkColor">
+                                                                    <color key="value" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5M-zR-chs">
+                                                            <rect key="frame" x="28" y="0.0" width="51.5" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Y6e-M3-t8u">
+                                                    <rect key="frame" x="93.5" y="0.0" width="44" height="20"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tEn-Ik-gIG" customClass="Checkbox" customModule="Aqar_First" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="G28-6g-QyA"/>
+                                                                <constraint firstAttribute="height" constant="20" id="xmb-lm-A0y"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="checkmarkStyleIB">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="uncheckedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkedBorderColor">
+                                                                    <color key="value" red="0.67450980390000004" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="checkmarkColor">
+                                                                    <color key="value" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MmV-Qu-UZI">
+                                                            <rect key="frame" x="28" y="0.0" width="16" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="T0W-Sa-ett" firstAttribute="leading" secondItem="k5z-sq-I9R" secondAttribute="leading" id="1TJ-tr-34x"/>
+                                        <constraint firstItem="kgE-Aa-bfY" firstAttribute="leading" secondItem="WSO-aX-N9h" secondAttribute="leading" id="3Jc-jV-B5H"/>
+                                        <constraint firstItem="C4S-TK-ssn" firstAttribute="top" secondItem="jkt-ck-lA0" secondAttribute="bottom" constant="15" id="4R3-u7-mmB"/>
+                                        <constraint firstItem="dkG-cU-rTL" firstAttribute="top" secondItem="C4S-TK-ssn" secondAttribute="bottom" constant="15" id="5u2-xR-eJC"/>
+                                        <constraint firstItem="NmN-Vy-u5P" firstAttribute="leading" secondItem="T0W-Sa-ett" secondAttribute="leading" id="63Z-5q-VJt"/>
+                                        <constraint firstItem="kGM-yj-sxm" firstAttribute="centerY" secondItem="kgE-Aa-bfY" secondAttribute="centerY" id="7h0-p0-ftQ"/>
+                                        <constraint firstItem="Y6e-M3-t8u" firstAttribute="leading" secondItem="1Au-tm-MXY" secondAttribute="leading" id="7lu-yT-s69"/>
+                                        <constraint firstAttribute="height" constant="315" id="8M6-mW-KV7"/>
+                                        <constraint firstItem="V9H-iy-LFT" firstAttribute="top" secondItem="HM5-Hv-TSP" secondAttribute="top" constant="10" id="9Ct-Yh-z2W"/>
+                                        <constraint firstItem="NmN-Vy-u5P" firstAttribute="centerY" secondItem="jkt-ck-lA0" secondAttribute="centerY" id="CpD-al-dm5"/>
+                                        <constraint firstItem="kGM-yj-sxm" firstAttribute="leading" secondItem="O5H-XD-uI2" secondAttribute="leading" constant="-8" id="SEm-pW-klS"/>
+                                        <constraint firstItem="FmE-0Q-M5E" firstAttribute="leading" secondItem="Hx5-KP-dgg" secondAttribute="leading" id="SL5-KE-dGP"/>
+                                        <constraint firstAttribute="trailing" secondItem="V9H-iy-LFT" secondAttribute="trailing" constant="20" id="SWO-NG-Hdz"/>
+                                        <constraint firstItem="NJl-y8-Y8K" firstAttribute="leading" secondItem="kgE-Aa-bfY" secondAttribute="leading" id="UbC-zm-LeC"/>
+                                        <constraint firstItem="1Au-tm-MXY" firstAttribute="leading" secondItem="FmE-0Q-M5E" secondAttribute="leading" id="YIg-26-2Kj"/>
+                                        <constraint firstItem="kgE-Aa-bfY" firstAttribute="top" secondItem="V9H-iy-LFT" secondAttribute="bottom" constant="10" id="d8t-Cl-Ipu"/>
+                                        <constraint firstItem="jkt-ck-lA0" firstAttribute="leading" secondItem="NJl-y8-Y8K" secondAttribute="leading" id="doZ-mi-wpO"/>
+                                        <constraint firstItem="V9H-iy-LFT" firstAttribute="leading" secondItem="HM5-Hv-TSP" secondAttribute="leading" constant="20" id="g44-lH-jG9"/>
+                                        <constraint firstItem="C4S-TK-ssn" firstAttribute="leading" secondItem="jkt-ck-lA0" secondAttribute="leading" id="hKd-kY-yY2"/>
+                                        <constraint firstItem="k5z-sq-I9R" firstAttribute="top" secondItem="kGM-yj-sxm" secondAttribute="bottom" constant="16" id="hYA-6W-UM0"/>
+                                        <constraint firstItem="3dx-Hd-Ph3" firstAttribute="centerY" secondItem="Ldr-6l-n7m" secondAttribute="centerY" id="kPi-MN-ko0"/>
+                                        <constraint firstItem="T0W-Sa-ett" firstAttribute="top" secondItem="k5z-sq-I9R" secondAttribute="bottom" constant="17" id="mEw-uF-ibo"/>
+                                        <constraint firstItem="3dx-Hd-Ph3" firstAttribute="trailing" secondItem="NmN-Vy-u5P" secondAttribute="trailing" id="oSI-4y-tOz"/>
+                                        <constraint firstItem="dkG-cU-rTL" firstAttribute="leading" secondItem="C4S-TK-ssn" secondAttribute="leading" id="q55-Ld-N77"/>
+                                        <constraint firstItem="NmN-Vy-u5P" firstAttribute="top" secondItem="T0W-Sa-ett" secondAttribute="bottom" constant="21" id="quF-f8-9YD"/>
+                                        <constraint firstItem="kGM-yj-sxm" firstAttribute="top" secondItem="V9H-iy-LFT" secondAttribute="bottom" constant="20" id="udk-tw-5ZU"/>
+                                        <constraint firstItem="NJl-y8-Y8K" firstAttribute="centerY" secondItem="T0W-Sa-ett" secondAttribute="centerY" id="uqt-aJ-5hm"/>
+                                        <constraint firstItem="k5z-sq-I9R" firstAttribute="leading" secondItem="kGM-yj-sxm" secondAttribute="leading" id="zFW-f5-lG7"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Sdm-e6-4KE">
+                                    <rect key="frame" x="52" y="775.5" width="310" height="150"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BGP-9j-rFJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add" translatesAutoresizingMaskIntoConstraints="NO" id="fQs-mk-Pwu">
+                                                    <rect key="frame" x="62.5" y="10" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="da7-tC-7rI"/>
+                                                        <constraint firstAttribute="width" constant="25" id="yLL-8P-1ay"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQE-28-nKM">
+                                                    <rect key="frame" x="31" y="45" width="88" height="13"/>
+                                                    <string key="text">Add a main photo
+</string>
+                                                    <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aD5-py-xI1">
+                                                    <rect key="frame" x="10" y="123" width="130" height="19"/>
+                                                    <string key="text">People will see this image when your ad appears
+in search results</string>
+                                                    <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="8"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.67450980392156867" green="0.71764705882352942" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="3LR-iZ-Jha"/>
+                                                <constraint firstItem="fQs-mk-Pwu" firstAttribute="centerX" secondItem="BGP-9j-rFJ" secondAttribute="centerX" id="RVm-U1-KZS"/>
+                                                <constraint firstItem="fQs-mk-Pwu" firstAttribute="top" secondItem="BGP-9j-rFJ" secondAttribute="top" constant="10" id="WRr-v7-LbC"/>
+                                                <constraint firstAttribute="height" constant="150" id="hII-RF-0Md"/>
+                                                <constraint firstAttribute="trailing" secondItem="aD5-py-xI1" secondAttribute="trailing" constant="10" id="lUA-2p-xs4"/>
+                                                <constraint firstAttribute="bottom" secondItem="aD5-py-xI1" secondAttribute="bottom" constant="8" id="n48-Vs-kBh"/>
+                                                <constraint firstItem="aD5-py-xI1" firstAttribute="leading" secondItem="BGP-9j-rFJ" secondAttribute="leading" constant="10" id="qUD-xF-GgH"/>
+                                                <constraint firstItem="wQE-28-nKM" firstAttribute="top" secondItem="fQs-mk-Pwu" secondAttribute="bottom" constant="10" id="u7y-HG-fGF"/>
+                                                <constraint firstItem="wQE-28-nKM" firstAttribute="centerX" secondItem="fQs-mk-Pwu" secondAttribute="centerX" id="xht-wN-g45"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QQ4-yP-XNm">
+                                            <rect key="frame" x="160" y="0.0" width="150" height="150"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gallery" translatesAutoresizingMaskIntoConstraints="NO" id="2UY-rQ-VbD">
+                                                    <rect key="frame" x="62.5" y="10" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="5an-J3-QmJ"/>
+                                                        <constraint firstAttribute="width" constant="25" id="ObK-c3-YdD"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add (3) more photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOY-At-g7S">
+                                                    <rect key="frame" x="25" y="48" width="100.5" height="13"/>
+                                                    <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Present your ad better to buyers" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n39-k8-KWS">
+                                                    <rect key="frame" x="10" y="132.5" width="130" height="9.5"/>
+                                                    <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="8"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="n39-k8-KWS" secondAttribute="bottom" constant="8" id="4dC-QA-6d8"/>
+                                                <constraint firstItem="2UY-rQ-VbD" firstAttribute="top" secondItem="QQ4-yP-XNm" secondAttribute="top" constant="10" id="6jI-Is-QGe"/>
+                                                <constraint firstItem="2UY-rQ-VbD" firstAttribute="centerX" secondItem="QQ4-yP-XNm" secondAttribute="centerX" id="VFS-MB-rqv"/>
+                                                <constraint firstItem="eOY-At-g7S" firstAttribute="centerX" secondItem="2UY-rQ-VbD" secondAttribute="centerX" id="eeG-rX-Ibg"/>
+                                                <constraint firstAttribute="trailing" secondItem="n39-k8-KWS" secondAttribute="trailing" constant="10" id="rbv-Gt-95S"/>
+                                                <constraint firstItem="n39-k8-KWS" firstAttribute="leading" secondItem="QQ4-yP-XNm" secondAttribute="leading" constant="10" id="rtu-Ng-Eoo"/>
+                                                <constraint firstItem="eOY-At-g7S" firstAttribute="top" secondItem="2UY-rQ-VbD" secondAttribute="bottom" constant="13" id="vsJ-Ko-QaT"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zj8-kM-d23">
+                                    <rect key="frame" x="36" y="980.5" width="342" height="48"/>
+                                    <color key="backgroundColor" red="0.35294117650000001" green="0.64313725489999995" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="342" id="MpZ-gF-3rG"/>
+                                        <constraint firstAttribute="height" constant="48" id="Wn1-4M-T7s"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="17"/>
+                                    <state key="normal" title="Save">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="15"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="u08-ig-RpU" secondAttribute="trailing" constant="20" id="10k-Nv-wVv"/>
+                                <constraint firstItem="yZx-AK-5iK" firstAttribute="top" secondItem="5Zf-wM-wbl" secondAttribute="bottom" constant="10" id="4sG-Jb-Eh4"/>
+                                <constraint firstItem="3Hy-ZG-ZBl" firstAttribute="top" secondItem="PYb-II-mZl" secondAttribute="bottom" constant="15" id="61l-Ag-WMU"/>
+                                <constraint firstItem="5Zf-wM-wbl" firstAttribute="top" secondItem="3Hy-ZG-ZBl" secondAttribute="bottom" constant="10" id="CXJ-nX-a0f"/>
+                                <constraint firstItem="zj8-kM-d23" firstAttribute="top" secondItem="Sdm-e6-4KE" secondAttribute="bottom" constant="55" id="D90-sw-7iE"/>
+                                <constraint firstAttribute="trailing" secondItem="HM5-Hv-TSP" secondAttribute="trailing" id="DJP-gR-6QD"/>
+                                <constraint firstItem="HM5-Hv-TSP" firstAttribute="leading" secondItem="nQd-Fu-hZD" secondAttribute="leading" id="F9l-B7-AO5"/>
+                                <constraint firstAttribute="height" constant="1031" id="Fht-zO-d59"/>
+                                <constraint firstItem="Sdm-e6-4KE" firstAttribute="centerX" secondItem="nQd-Fu-hZD" secondAttribute="centerX" id="IEX-2L-8yQ"/>
+                                <constraint firstItem="yZx-AK-5iK" firstAttribute="top" secondItem="HM5-Hv-TSP" secondAttribute="bottom" constant="83.5" id="IpZ-jh-Ph0"/>
+                                <constraint firstItem="Sdm-e6-4KE" firstAttribute="top" secondItem="SX7-2f-1OG" secondAttribute="bottom" constant="23" id="Mye-5g-MrJ"/>
+                                <constraint firstItem="SX7-2f-1OG" firstAttribute="top" secondItem="yZx-AK-5iK" secondAttribute="bottom" constant="20" id="R8X-ZZ-PK7"/>
+                                <constraint firstItem="zj8-kM-d23" firstAttribute="centerX" secondItem="nQd-Fu-hZD" secondAttribute="centerX" id="RIg-4F-zqp"/>
+                                <constraint firstAttribute="trailing" secondItem="5Zf-wM-wbl" secondAttribute="trailing" id="UIS-QD-8fC"/>
+                                <constraint firstItem="3Hy-ZG-ZBl" firstAttribute="leading" secondItem="PYb-II-mZl" secondAttribute="leading" constant="10" id="WGV-zl-x4N"/>
+                                <constraint firstItem="SX7-2f-1OG" firstAttribute="leading" secondItem="nQd-Fu-hZD" secondAttribute="leading" constant="20" id="WIf-oU-YXp"/>
+                                <constraint firstItem="5Zf-wM-wbl" firstAttribute="leading" secondItem="nQd-Fu-hZD" secondAttribute="leading" id="b3j-pJ-hgW"/>
+                                <constraint firstAttribute="trailing" secondItem="yZx-AK-5iK" secondAttribute="trailing" constant="20" id="de4-CP-UOg"/>
+                                <constraint firstItem="PYb-II-mZl" firstAttribute="top" secondItem="u08-ig-RpU" secondAttribute="bottom" constant="20" id="eFR-c3-uJA"/>
+                                <constraint firstItem="yZx-AK-5iK" firstAttribute="leading" secondItem="nQd-Fu-hZD" secondAttribute="leading" constant="20" id="j0c-WN-Zok"/>
+                                <constraint firstItem="u08-ig-RpU" firstAttribute="leading" secondItem="nQd-Fu-hZD" secondAttribute="leading" constant="20" id="koG-1I-mlo"/>
+                                <constraint firstItem="PYb-II-mZl" firstAttribute="leading" secondItem="u08-ig-RpU" secondAttribute="leading" id="mbD-tc-jHn"/>
+                                <constraint firstItem="HM5-Hv-TSP" firstAttribute="top" secondItem="3Hy-ZG-ZBl" secondAttribute="bottom" constant="10" id="mfP-WF-JnZ"/>
+                                <constraint firstAttribute="trailing" secondItem="SX7-2f-1OG" secondAttribute="trailing" constant="20" id="wBm-Kr-H2M"/>
+                                <constraint firstItem="u08-ig-RpU" firstAttribute="top" secondItem="nQd-Fu-hZD" secondAttribute="top" constant="10" id="xFT-ZQ-XtN"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="nQd-Fu-hZD" firstAttribute="top" secondItem="0Xu-LW-c84" secondAttribute="top" id="Mcb-wb-aKu"/>
+                        <constraint firstAttribute="bottom" secondItem="nQd-Fu-hZD" secondAttribute="bottom" id="QlM-ux-Px1"/>
+                        <constraint firstItem="nQd-Fu-hZD" firstAttribute="leading" secondItem="0Xu-LW-c84" secondAttribute="leading" id="ZA1-Re-bK2"/>
+                        <constraint firstAttribute="trailing" secondItem="nQd-Fu-hZD" secondAttribute="trailing" id="muy-VB-sHk"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="7ov-as-ODG"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0Xu-LW-c84" secondAttribute="bottom" id="33c-KQ-1oZ"/>
+                <constraint firstItem="nQd-Fu-hZD" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="33u-Be-dJY"/>
+                <constraint firstItem="YIH-0M-vrg" firstAttribute="leading" secondItem="7ov-as-ODG" secondAttribute="leading" id="9XQ-kU-8cP"/>
+                <constraint firstItem="YIH-0M-vrg" firstAttribute="trailing" secondItem="7ov-as-ODG" secondAttribute="trailing" id="ABJ-MC-GYB"/>
+                <constraint firstItem="YIH-0M-vrg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Grw-bA-TV9"/>
+                <constraint firstItem="0Xu-LW-c84" firstAttribute="top" secondItem="YIH-0M-vrg" secondAttribute="bottom" id="RZ8-G8-NHx"/>
+                <constraint firstItem="0Xu-LW-c84" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="asw-Kr-d7R"/>
+                <constraint firstItem="0Xu-LW-c84" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="wcv-Jh-Teb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="1.4492753623188408" y="503.23660714285711"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="3dx-Hd-Ph3">
+            <size key="intrinsicContentSize" width="44.5" height="19"/>
+        </designable>
+        <designable name="4ta-rw-qsh">
+            <size key="intrinsicContentSize" width="169" height="18.5"/>
+        </designable>
+        <designable name="7IM-ay-3bl">
+            <size key="intrinsicContentSize" width="81.5" height="18"/>
+        </designable>
+        <designable name="H7Y-3J-wYU">
+            <size key="intrinsicContentSize" width="71" height="18"/>
+        </designable>
+        <designable name="O5H-XD-uI2">
+            <size key="intrinsicContentSize" width="72.5" height="15.5"/>
+        </designable>
+        <designable name="WSO-aX-N9h">
+            <size key="intrinsicContentSize" width="81.5" height="15.5"/>
+        </designable>
+        <designable name="ilm-NX-RuR">
+            <size key="intrinsicContentSize" width="44.5" height="19"/>
+        </designable>
+        <designable name="u08-ig-RpU">
+            <size key="intrinsicContentSize" width="180" height="21.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="add" width="27.5" height="27.5"/>
+        <image name="gallery" width="19.5" height="17"/>
+        <image name="group" width="23" height="23"/>
+        <image name="left-arrow" width="10" height="10"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

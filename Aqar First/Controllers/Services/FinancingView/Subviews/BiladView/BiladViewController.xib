@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BiladViewController" customModule="Aqar_First" customModuleProvider="target">
+            <connections>
+                <outlet property="radioNo" destination="k7E-50-bMd" id="0vl-9l-Z0P"/>
+                <outlet property="radioYes" destination="sDa-ZB-bEw" id="Tgh-4Q-cCI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bank Albilad" translatesAutoresizingMaskIntoConstraints="NO" id="oEi-4Z-dew">
+                    <rect key="frame" x="93.666666666666686" y="56" width="203" height="111"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="203" id="eUN-fm-O46"/>
+                        <constraint firstAttribute="height" constant="111" id="osM-fX-jqg"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="l15-eA-mW7">
+                    <rect key="frame" x="46" y="175" width="298" height="207"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kRt-tm-AmB">
+                            <rect key="frame" x="0.0" y="0.0" width="298" height="48"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cOA-ba-f5X">
+                                    <rect key="frame" x="0.0" y="0.0" width="220.33333333333334" height="48"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="قيمة العقار" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJ3-Hx-Xml">
+                                    <rect key="frame" x="225.33333333333329" y="0.0" width="72.666666666666657" height="48"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="2WM-pa-GDH"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4CO-pN-4zB">
+                            <rect key="frame" x="0.0" y="53" width="298" height="48"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ycR-Xl-4fr">
+                                    <rect key="frame" x="0.0" y="0.0" width="202" height="48"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="إجمالي الراتب" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="up5-II-MX3">
+                                    <rect key="frame" x="207" y="0.0" width="91" height="48"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="mRF-yD-s2U"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ip3-he-5d7">
+                            <rect key="frame" x="0.0" y="106" width="298" height="48"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mlX-iT-Z9h">
+                                    <rect key="frame" x="0.0" y="0.0" width="193" height="48"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="العمر بالسنوات" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6g7-mk-JbQ">
+                                    <rect key="frame" x="198" y="0.0" width="100" height="48"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="uAm-hy-diY"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="l1f-Rl-FFq">
+                            <rect key="frame" x="0.0" y="159" width="298" height="48"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2zd-ct-baL">
+                                    <rect key="frame" x="0.0" y="0.0" width="228.66666666666666" height="48"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نوع العقار" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbu-Sh-CEq">
+                                    <rect key="frame" x="233.66666666666671" y="0.0" width="64.333333333333343" height="48"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="fq2-xw-DAi"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مدعوم من وزارة الإسكان /  صندوق التنمية العقارية ؟" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSz-Ip-nYY">
+                    <rect key="frame" x="64.333333333333343" y="399" width="261.33333333333326" height="15.666666666666686"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDa-ZB-bEw">
+                    <rect key="frame" x="285" y="425.66666666666669" width="59" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="SNn-bC-G3I"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="unchecked radio" imagePlacement="trailing" title="نعم">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="radioButtonPress:" destination="-1" eventType="touchUpInside" id="Iwn-Ew-ALp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7E-50-bMd">
+                    <rect key="frame" x="298" y="448.66666666666669" width="46" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="14d-Bd-5G0"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="unchecked radio" imagePlacement="trailing" title="لا">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="radioButtonPress:" destination="-1" eventType="touchUpInside" id="kda-0s-dsr"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مدة التمويل بالسنوات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OgZ-88-qqX">
+                    <rect key="frame" x="224.66666666666666" y="479.66666666666669" width="119.33333333333334" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="٢٠" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45J-fB-QDC">
+                    <rect key="frame" x="46" y="479.66666666666669" width="11" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="586-NH-9Di">
+                    <rect key="frame" x="46" y="513.66666666666663" width="298" height="10"/>
+                    <color key="tintColor" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="Kad-TO-XBb"/>
+                    </constraints>
+                </progressView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="l15-eA-mW7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="46" id="6MJ-Ts-ZAY"/>
+                <constraint firstItem="OgZ-88-qqX" firstAttribute="trailing" secondItem="l15-eA-mW7" secondAttribute="trailing" id="BCS-43-UnZ"/>
+                <constraint firstItem="eSz-Ip-nYY" firstAttribute="top" secondItem="l15-eA-mW7" secondAttribute="bottom" constant="17" id="ByT-qQ-A36"/>
+                <constraint firstItem="OgZ-88-qqX" firstAttribute="centerY" secondItem="45J-fB-QDC" secondAttribute="centerY" id="CVo-bJ-fF0"/>
+                <constraint firstItem="sDa-ZB-bEw" firstAttribute="top" secondItem="eSz-Ip-nYY" secondAttribute="bottom" constant="11" id="KHs-wW-J91"/>
+                <constraint firstItem="eSz-Ip-nYY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Kzs-Z9-ht7"/>
+                <constraint firstItem="sDa-ZB-bEw" firstAttribute="trailing" secondItem="l15-eA-mW7" secondAttribute="trailing" id="LBV-dg-ovJ"/>
+                <constraint firstItem="k7E-50-bMd" firstAttribute="top" secondItem="sDa-ZB-bEw" secondAttribute="bottom" constant="5" id="T68-BG-3kl"/>
+                <constraint firstItem="586-NH-9Di" firstAttribute="leading" secondItem="l15-eA-mW7" secondAttribute="leading" id="UOZ-QP-9jm"/>
+                <constraint firstItem="l15-eA-mW7" firstAttribute="top" secondItem="oEi-4Z-dew" secondAttribute="bottom" constant="8" id="YCQ-RN-0ll"/>
+                <constraint firstItem="oEi-4Z-dew" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="9" id="bYA-Jk-Mh6"/>
+                <constraint firstItem="45J-fB-QDC" firstAttribute="leading" secondItem="l15-eA-mW7" secondAttribute="leading" id="emx-W2-eCl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="l15-eA-mW7" secondAttribute="trailing" constant="46" id="hV0-i4-HPi"/>
+                <constraint firstItem="OgZ-88-qqX" firstAttribute="top" secondItem="eSz-Ip-nYY" secondAttribute="bottom" constant="65" id="iAd-qM-6ab"/>
+                <constraint firstItem="oEi-4Z-dew" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iC6-UU-n53"/>
+                <constraint firstItem="586-NH-9Di" firstAttribute="top" secondItem="OgZ-88-qqX" secondAttribute="bottom" constant="17" id="kM7-NS-eXu"/>
+                <constraint firstItem="586-NH-9Di" firstAttribute="trailing" secondItem="l15-eA-mW7" secondAttribute="trailing" id="kZn-cF-Wq2"/>
+                <constraint firstItem="k7E-50-bMd" firstAttribute="trailing" secondItem="sDa-ZB-bEw" secondAttribute="trailing" id="y4H-6S-0ge"/>
+            </constraints>
+            <point key="canvasLocation" x="130.76923076923077" y="-11.374407582938389"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Bank Albilad" width="203" height="111"/>
+        <image name="unchecked radio" width="12" height="12"/>
+    </resources>
+</document>
