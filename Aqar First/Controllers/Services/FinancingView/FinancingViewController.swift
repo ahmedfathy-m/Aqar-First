@@ -10,11 +10,13 @@ import UIKit
 class FinancingViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet weak var swapView: UIView!
+    @IBOutlet weak var pageSwitcher: UISegmentedControl!
     
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.isNavigationBarHidden = true
+        pageChange(pageSwitcher)
     }
     
     // MARK: - IBActions

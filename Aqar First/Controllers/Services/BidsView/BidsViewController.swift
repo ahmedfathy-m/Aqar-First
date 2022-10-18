@@ -35,6 +35,15 @@ class BidsViewController: UIViewController {
     }
     
     @IBAction func settingsModal(_ sender: UIButton) {
-
+        let vc = BottomSheetView()
+        if let sheet = vc.sheetPresentationController {
+            sheet.detents = [.custom(resolver: { _ in
+                return 195
+            })]
+            sheet.prefersGrabberVisible = true
+            sheet.preferredCornerRadius = 28
+        }
+        self.modalPresentationStyle = .popover
+        self.present(vc, animated: true)
     }
 }

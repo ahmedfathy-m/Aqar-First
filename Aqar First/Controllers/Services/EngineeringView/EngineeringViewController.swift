@@ -8,11 +8,20 @@
 import UIKit
 
 class EngineeringViewController: UIViewController {
+    // MARK: - IBOutlets
+    @IBOutlet weak var tableView: UITableView!
 
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureTableView()
         navigationController?.isNavigationBarHidden = true
+    }
+    
+    // MARK: - Table View Configuration
+    func configureTableView() {
+        tableView.register(ServiceProviderCell.nib(), forCellReuseIdentifier: ServiceProviderCell.identifier)
+        tableView.dataSource = self
     }
     
     // MARK: - IBActions

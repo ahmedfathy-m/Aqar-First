@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BottomSheetView" customModule="Aqar_First" customModuleProvider="target">
+            <connections>
+                <outlet property="radioBid" destination="Ess-td-gwx" id="dol-Sb-qpF"/>
+                <outlet property="radioCity" destination="IUb-cl-uaP" id="EvW-Uy-Bnq"/>
+                <outlet property="radioTender" destination="gHn-te-7mU" id="BKK-Jc-KXm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تصنيف حسب" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NoV-3f-NJ7">
+                    <rect key="frame" x="289" y="44" width="64" height="13.333333333333336"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="Aj7-8f-F85">
+                    <rect key="frame" x="251.66666666666666" y="74.333333333333329" width="71.333333333333343" height="63.999999999999986"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ess-td-gwx">
+                            <rect key="frame" x="5.6666666666666572" y="0.0" width="65.666666666666671" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="tqt-Mv-9Bs"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="unchecked radio" imagePlacement="trailing" title="مزايدة">
+                                <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="11"/>
+                                <color key="baseForegroundColor" systemColor="labelColor"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="radioAction:" destination="-1" eventType="touchUpInside" id="EoR-7t-IsJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHn-te-7mU">
+                            <rect key="frame" x="0.0" y="25" width="71.333333333333329" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="Ze9-W9-kME"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="unchecked radio" imagePlacement="trailing" title="مناقصة">
+                                <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="11"/>
+                                <color key="baseForegroundColor" systemColor="labelColor"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="radioAction:" destination="-1" eventType="touchUpInside" id="xgu-Bw-jLE"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUb-cl-uaP">
+                            <rect key="frame" x="1.6666666666666856" y="50" width="69.666666666666671" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="MOM-yS-ccX"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="unchecked radio" imagePlacement="trailing" title="المدينة">
+                                <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="11"/>
+                                <color key="baseForegroundColor" systemColor="labelColor"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="radioAction:" destination="-1" eventType="touchUpInside" id="IKz-hg-Uku"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NoV-3f-NJ7" secondAttribute="trailing" constant="37" id="FHM-w7-Bk2"/>
+                <constraint firstItem="Aj7-8f-F85" firstAttribute="top" secondItem="NoV-3f-NJ7" secondAttribute="bottom" constant="17" id="II3-GV-OGd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Aj7-8f-F85" secondAttribute="trailing" constant="67" id="gP6-a0-8LY"/>
+                <constraint firstItem="NoV-3f-NJ7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="oLe-fr-EyN"/>
+            </constraints>
+            <point key="canvasLocation" x="-95.384615384615387" y="-11.374407582938389"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="unchecked radio" width="12" height="12"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -12,6 +12,7 @@ class BiladViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet weak var radioYes: UIButton!
     @IBOutlet weak var radioNo: UIButton!
+    @IBOutlet weak var yearsSlider: UISlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,7 @@ class BiladViewController: UIViewController {
         radioYes.setImage(UIImage(named: "checked radio"), for: .selected)
         radioNo.setImage(UIImage(named: "unchecked radio"), for: .normal)
         radioNo.setImage(UIImage(named: "checked radio"), for: .selected)
+        yearsSlider.semanticContentAttribute = .forceRightToLeft
     }
     
     

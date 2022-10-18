@@ -1252,29 +1252,13 @@ You can continue to log in</string>
                                             <action selector="backButtonAction:" destination="gbd-mL-g9L" eventType="touchUpInside" id="Ndw-Pg-oH3"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="البحث" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ye2-dT-Gth">
-                                        <rect key="frame" x="53" y="116" width="308" height="41"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="308" id="Vav-1g-3Zc"/>
-                                            <constraint firstAttribute="height" constant="41" id="ycN-Nl-VaG"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Ye2-dT-Gth" firstAttribute="top" secondItem="q3t-R1-kBY" secondAttribute="bottom" constant="13" id="0vk-Oo-VFi"/>
                                     <constraint firstAttribute="bottom" secondItem="q3t-R1-kBY" secondAttribute="bottom" constant="33" id="1Tx-et-tPO"/>
                                     <constraint firstItem="hTX-gw-CBI" firstAttribute="centerY" secondItem="q3t-R1-kBY" secondAttribute="centerY" id="8PQ-Nb-uyu"/>
                                     <constraint firstAttribute="height" constant="136" id="GvF-7I-vG2"/>
                                     <constraint firstItem="q3t-R1-kBY" firstAttribute="centerX" secondItem="xXM-M9-lg5" secondAttribute="centerX" id="QhV-M4-RY8"/>
-                                    <constraint firstItem="Ye2-dT-Gth" firstAttribute="centerX" secondItem="xXM-M9-lg5" secondAttribute="centerX" id="pdL-Zp-Jab"/>
                                     <constraint firstItem="hTX-gw-CBI" firstAttribute="leading" secondItem="q3t-R1-kBY" secondAttribute="trailing" constant="111" id="vdx-E0-1KS"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -1283,6 +1267,20 @@ You can continue to log in</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ابحث هنا" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ye2-dT-Gth">
+                                <rect key="frame" x="53" y="115" width="308" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="308" id="Vav-1g-3Zc"/>
+                                    <constraint firstAttribute="height" constant="41" id="ycN-Nl-VaG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HCX-qe-9ri"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1291,8 +1289,10 @@ You can continue to log in</string>
                             <constraint firstItem="xXM-M9-lg5" firstAttribute="top" secondItem="xth-7I-Bg4" secondAttribute="top" id="8hN-Wj-ey3"/>
                             <constraint firstItem="HCX-qe-9ri" firstAttribute="bottom" secondItem="6MZ-gv-N8T" secondAttribute="bottom" id="Pg1-sb-2ai"/>
                             <constraint firstItem="xXM-M9-lg5" firstAttribute="trailing" secondItem="HCX-qe-9ri" secondAttribute="trailing" id="U73-z9-QVf"/>
+                            <constraint firstItem="Ye2-dT-Gth" firstAttribute="centerX" secondItem="xth-7I-Bg4" secondAttribute="centerX" id="ZcQ-Wc-ABO"/>
                             <constraint firstItem="6MZ-gv-N8T" firstAttribute="leading" secondItem="HCX-qe-9ri" secondAttribute="leading" id="jpm-Ws-7mk"/>
                             <constraint firstItem="xXM-M9-lg5" firstAttribute="leading" secondItem="HCX-qe-9ri" secondAttribute="leading" id="ooY-SN-DNa"/>
+                            <constraint firstItem="Ye2-dT-Gth" firstAttribute="top" secondItem="xXM-M9-lg5" secondAttribute="bottom" constant="-21" id="qBc-92-vP2"/>
                             <constraint firstItem="6MZ-gv-N8T" firstAttribute="top" secondItem="xXM-M9-lg5" secondAttribute="bottom" constant="44" id="ybr-1b-flw"/>
                         </constraints>
                     </view>
@@ -1478,7 +1478,9 @@ You can continue to log in</string>
                                 </constraints>
                                 <color key="tintColor" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="إرسال"/>
+                                <buttonConfiguration key="configuration" style="filled" title="إرسال">
+                                    <color key="baseBackgroundColor" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="15"/>
@@ -1646,15 +1648,15 @@ You can continue to log in</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="43P-gC-IlK">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="43P-gC-IlK">
                                 <rect key="frame" x="0.0" y="204" width="414" height="658"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="pfM-hU-EF7">
-                                        <rect key="frame" x="0.0" y="50" width="414" height="43.5"/>
+                                        <rect key="frame" x="20" y="55.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pfM-hU-EF7" id="bl6-wg-O7K">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1685,6 +1687,9 @@ You can continue to log in</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wK1-5K-A1f"/>
+                    <connections>
+                        <outlet property="tableView" destination="43P-gC-IlK" id="677-jB-3w8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2F5-C0-cfL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1813,7 +1818,9 @@ You can continue to log in</string>
                                 </constraints>
                                 <color key="tintColor" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="إرسال"/>
+                                <buttonConfiguration key="configuration" style="filled" title="إرسال">
+                                    <color key="baseBackgroundColor" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="15"/>
@@ -2046,7 +2053,9 @@ You can continue to log in</string>
                                 </constraints>
                                 <color key="tintColor" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="إرسال"/>
+                                <buttonConfiguration key="configuration" style="filled" title="إرسال">
+                                    <color key="baseBackgroundColor" red="0.30196078430000001" green="0.58431372550000005" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="15"/>
@@ -2195,6 +2204,7 @@ You can continue to log in</string>
                     </view>
                     <navigationItem key="navigationItem" id="bWk-1X-ElM"/>
                     <connections>
+                        <outlet property="pageSwitcher" destination="6l6-fJ-0ef" id="srR-dr-tUH"/>
                         <outlet property="swapView" destination="vlp-4X-hKx" id="ucc-5r-DtI"/>
                     </connections>
                 </viewController>

@@ -11,6 +11,9 @@
 		7419107128FE0266009BCAE5 /* SahlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7419106F28FE0266009BCAE5 /* SahlViewController.swift */; };
 		7419107228FE0266009BCAE5 /* SahlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7419107028FE0266009BCAE5 /* SahlViewController.xib */; };
 		7441A55928FE216300BC170F /* BidsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7441A55828FE216300BC170F /* BidsDataSource.swift */; };
+		7441A55D28FF03D700BC170F /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7441A55B28FF03D700BC170F /* BottomSheetView.swift */; };
+		7441A55E28FF03D700BC170F /* BottomSheetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7441A55C28FF03D700BC170F /* BottomSheetView.xib */; };
+		7441A56028FF0E2A00BC170F /* EngineeringServicesDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7441A55F28FF0E2A00BC170F /* EngineeringServicesDatasource.swift */; };
 		7464CE5A28FDB3C800AD61F2 /* ServicesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7464CE5928FDB3C800AD61F2 /* ServicesListViewController.swift */; };
 		7464CE5C28FDB45100AD61F2 /* ServicesTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7464CE5B28FDB45100AD61F2 /* ServicesTableDataSource.swift */; };
 		7464CE6228FDB5BB00AD61F2 /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7464CE6028FDB5BB00AD61F2 /* ServiceCell.swift */; };
@@ -181,6 +184,9 @@
 		7419106F28FE0266009BCAE5 /* SahlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SahlViewController.swift; sourceTree = "<group>"; };
 		7419107028FE0266009BCAE5 /* SahlViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SahlViewController.xib; sourceTree = "<group>"; };
 		7441A55828FE216300BC170F /* BidsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidsDataSource.swift; sourceTree = "<group>"; };
+		7441A55B28FF03D700BC170F /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		7441A55C28FF03D700BC170F /* BottomSheetView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetView.xib; sourceTree = "<group>"; };
+		7441A55F28FF0E2A00BC170F /* EngineeringServicesDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineeringServicesDatasource.swift; sourceTree = "<group>"; };
 		7464CE5928FDB3C800AD61F2 /* ServicesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesListViewController.swift; sourceTree = "<group>"; };
 		7464CE5B28FDB45100AD61F2 /* ServicesTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableDataSource.swift; sourceTree = "<group>"; };
 		7464CE6028FDB5BB00AD61F2 /* ServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
@@ -387,9 +393,19 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
+		7441A55A28FF038F00BC170F /* BottomSheetView */ = {
+			isa = PBXGroup;
+			children = (
+				7441A55B28FF03D700BC170F /* BottomSheetView.swift */,
+				7441A55C28FF03D700BC170F /* BottomSheetView.xib */,
+			);
+			path = BottomSheetView;
+			sourceTree = "<group>";
+		};
 		7464CE5728FDB39D00AD61F2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				7441A55A28FF038F00BC170F /* BottomSheetView */,
 				747BB94728FE166700244C41 /* RegisterBidView */,
 				747BB94428FE145800244C41 /* BidsView */,
 				747BB94328FE141500244C41 /* Common Subviews */,
@@ -481,6 +497,7 @@
 			isa = PBXGroup;
 			children = (
 				747BB93E28FE0F7600244C41 /* EngineeringViewController.swift */,
+				7441A55F28FF0E2A00BC170F /* EngineeringServicesDatasource.swift */,
 			);
 			path = EngineeringView;
 			sourceTree = "<group>";
@@ -1386,6 +1403,7 @@
 				B12365C428DF64FC00532BEE /* AqarListTableViewCell.xib in Resources */,
 				B10C6C2628E0C4640067EB97 /* CommonQuestionVC.xib in Resources */,
 				B169FE5128DDF6A400E1AADF /* Assets.xcassets in Resources */,
+				7441A55E28FF03D700BC170F /* BottomSheetView.xib in Resources */,
 				B10C6C2E28E0C4640067EB97 /* PrivacyPolicyCell.xib in Resources */,
 				B10C6C1A28E0C4640067EB97 /* AqarLocationVC.xib in Resources */,
 				B10C6C2328E0C4640067EB97 /* AboutVC.xib in Resources */,
@@ -1529,6 +1547,7 @@
 				B169FE4A28DDF6A300E1AADF /* SceneDelegate.swift in Sources */,
 				B10C6C1F28E0C4640067EB97 /* AqarStatusVC.swift in Sources */,
 				B10C6C3B28E0C4640067EB97 /* EditProfileVC.swift in Sources */,
+				7441A55D28FF03D700BC170F /* BottomSheetView.swift in Sources */,
 				B1AFE23728DF6D1B006AEB2A /* AppearanceNavigationController.swift in Sources */,
 				B1AFE18428DF68A0006AEB2A /* APIEndpoints.swift in Sources */,
 				B10C6C5028E0C4640067EB97 /* BankAlbiladVC.swift in Sources */,
@@ -1544,6 +1563,7 @@
 				B10C6C3628E0C4640067EB97 /* RightSideCell.swift in Sources */,
 				B10C6C4728E0C4640067EB97 /* FinishOrdersVC.swift in Sources */,
 				B1B3A9C928DE53E800D8A299 /* UIColorPlus.swift in Sources */,
+				7441A56028FF0E2A00BC170F /* EngineeringServicesDatasource.swift in Sources */,
 				7464CE6228FDB5BB00AD61F2 /* ServiceCell.swift in Sources */,
 				B10C6C2928E0C4640067EB97 /* CommonQuestionVC.swift in Sources */,
 				B1AFE18128DF68A0006AEB2A /* User.swift in Sources */,
